@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mathuram Cafe — Menu</title>
+<meta name="description" content="Mathuram Cafe, Brahmavara — Pure Veg AC & Non-AC fine dine. South Indian, North Indian, Chinese, Tandoor, Chats & more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<header class="topbar">
+  <div class="brandmark">
+    <svg class="cup" viewBox="0 0 24 24" fill="none"><path d="M6 10h12v3a6 6 0 0 1-6 6 6 6 0 0 1-6-6v-3z" stroke="#c99a4b" stroke-width="1.4"/><path d="M18 11h1.5a2.2 2.2 0 0 1 0 4.4H18" stroke="#c99a4b" stroke-width="1.4"/><path d="M9 4c.5.8-.5 1.2 0 2M12 4c.5.8-.5 1.2 0 2M15 4c.5.8-.5 1.2 0 2" stroke="#c99a4b" stroke-width="1.2" stroke-linecap="round"/></svg>
+    <div class="word">Mathuram<small>Pure Veg Cafe</small></div>
+  </div>
+  <button class="searchbtn" id="searchToggle" aria-label="Search menu">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+</header>
+
+<div class="searchwrap" id="searchWrap">
+  <input type="text" id="searchInput" placeholder="Search dosa, paneer, biryani, juice…" autocomplete="off">
+</div>
+
+<nav class="catnav" id="catnav"></nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="logo">
+    <img src="assets/hero-logo.png" alt="Mathuram Cafe">
+    <svg class="steam" viewBox="0 0 40 30">
+      <path d="M12 28c4-6-4-8 0-14"/>
+      <path d="M20 28c4-6-4-8 0-14"/>
+      <path d="M28 28c4-6-4-8 0-14"/>
+    </svg>
+  </div>
+  <p class="tagline">AC &amp; Non-AC Fine Dine Restaurant</p>
+  <div class="badges">
+    <span class="badge-chip"><span class="dot"></span>100% Pure Veg</span>
+    <span class="badge-chip">South &amp; North Indian</span>
+    <span class="badge-chip">Chinese · Tandoor · Chats</span>
+    <span class="badge-chip">Drive-Thru Available</span>
+  </div>
+  <div class="cta-row">
+    <a href="#dosa" class="btn btn-solid">View Full Menu</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Mathuram+Cafe+Laxmi+Empire+Krishikendra+Brahmavara" target="_blank" rel="noopener" class="btn btn-line">Get Directions</a>
+  </div>
+  <p class="addr"><b>Laxmi Empire, Krishikendra, Brahmavara</b><br>Karnataka · Dine-in · Drive-Thru</p>
+</section>
+
+<main id="menuRoot"></main>
+
+<div class="empty-state" id="emptyState">No dishes match your search. Try “dosa”, “paneer” or “juice”.</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <img class="logo" src="assets/footer-logo.png" alt="Mathuram Cafe">
+  <h3>Mathuram Cafe</h3>
+  <p class="addr">Laxmi Empire, Krishikendra, Brahmavara<br>Pure Veg · AC &amp; Non-AC Fine Dine · Drive-Thru Available<br>Prices in ₹ · GST extra as applicable on all items</p>
+  <p class="gst">GST Number: 29ACGFM7833F1ZX</p>
+  <p class="credit">Menu digitised from the in-store card · Prices subject to change</p>
+</footer>
+
+<div class="fab-row">
+  <a class="fab" id="fabTop" aria-label="Back to top" href="#top">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
