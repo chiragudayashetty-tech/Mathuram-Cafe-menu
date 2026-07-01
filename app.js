@@ -1,7 +1,7 @@
 /* =====================================================
    RENDER
 ===================================================== */
-const scallopSVG = `<svg class="scallop" viewBox="0 0 200 16" preserveAspectRatio="none"><path fill="currentColor" d="M0 16 Q 8.3 0 16.6 16 Q 25 0 33.3 16 Q 41.6 0 50 16 Q 58.3 0 66.6 16 Q 75 0 83.3 16 Q 91.6 0 100 16 Q 108.3 0 116.6 16 Q 125 0 133.3 16 Q 141.6 0 150 16 Q 158.3 0 166.6 16 Q 175 0 183.3 16 Q 191.6 0 200 16 Z"/></svg>`;
+const scallopSVG = `<svg class="scallop" viewBox="0 0 200 16" preserveAspectRatio="none"><path fill="currentColor" d="M0 16 L10 0 L20 16 L30 0 L40 16 L50 0 L60 16 L70 0 L80 16 L90 0 L100 16 L110 0 L120 16 L130 0 L140 16 L150 0 L160 16 L170 0 L180 16 L190 0 L200 16 Z"/></svg>`;
 
 function itemHTML(it){
   const [name, price, special] = it;
